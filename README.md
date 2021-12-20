@@ -1,0 +1,2 @@
+# cumulationsJavaScript
+daily practice codes
