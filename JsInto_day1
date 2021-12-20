@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html>
+    <script>
+      "use strict";
+      const PI = 22.7;
+      let num, area, str, cnf;
+     str = prompt("enter choice 1,2,3",""); 
+     choice(str);
+    function choice(str) 
+    {
+      switch(str)
+      {
+      case '1':
+      num = +prompt("enter radius of circle","");
+      area = num**2*PI;
+      alert("Circle area = "+area);
+      break;
+
+      case "2":
+      num = +prompt("enter side of square","");
+      area = num**2;
+      alert("Square area = "+area);
+         break;
+
+      case "3":
+      for(let i=0;i<=str;i++)
+      {
+      alert(i*3);
+      }
+      break;
+      default:
+      alert("Invalid choice!");
+      }
+    }
+    
+      if(str=="1")
+      {
+        cnf= confirm("want try choice 2 ?");
+        choice("2");
+      }
+      else if(str=="2")
+      {
+        cnf= confirm("want try choice 3 ?");
+       choice("3");
+      }
+      
+    </script>
+
+ 
+</html>
