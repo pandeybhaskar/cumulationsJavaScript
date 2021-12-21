@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+let user;
+       //.........1.Intro to JSON 
+function JsonStr()
+{
+  user={
+  name: "Bhaskar",
+  age: 23,
+  coder: true,
+  city : null,
+  role: ["coder","tester","hr",{gender:"male"}]
+  };
+                //.........2. Using STRINGIFY
+  let json= JSON.stringify(user); 
+  alert(typeof json);
+  alert(json); 
+}
+JsonStr();
+</script>
