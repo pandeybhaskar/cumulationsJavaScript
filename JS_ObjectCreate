@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+//............. 1.OBJECT CREATION OF STRING, NUMBER, BOOLEAN, NULL DATATYPES
+let user;
+let newObjfunc;
+function obj()
+{
+ user= {
+  name: "Bhaskar",
+  age: 23,
+  coder: true,
+  city : null
+};
+}obj();
+for(let key in user) // ...........using for...in() loop
+alert(user[key]);
+
+//............... 2.INSIDE ARROW FUNCTION OBJECT CREATION
+newObjfunc=()=> 
+user={
+  name: "Pandey",
+  age: 23.2,
+  coder: false,
+  city : null
+
+};
+newObjfunc();
+for(let key in user)
+alert(user[key]);
+
+</script>
