@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+let user, obStr,nm,ag; 
+//...............1. INPUT OF VALUES AND INITIALIZING OBJECT KEYS
+let name= prompt("What's your name?","");
+let age= +prompt("Please enter age","");
+//.........ARROW FUNCTION
+obStr=()=> 
+user={
+  s1: "Your name is..."
+};
+obStr();
+//...............2. ADDING NEW KEYS AND VALUES
+user.nm= name;
+user.age= age;
+user["likes tea"]=false;
+for(let key in user)
+alert(user[key]);
+alert("likes tea" in user);
+alert(user.age);
+</script>
