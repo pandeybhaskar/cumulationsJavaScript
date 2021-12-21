@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+let user, name;
+let num1= +prompt("num1 ?");
+let num2= +prompt("num2 ?");
+name="OutofConstructor";
+            //.............1. CONSTRUCTOR DEFINITION
+function Change()  
+{
+           //.......................2.USAGE OF this KEYWORD
+   this.name= "This-Wonder";
+  return(name);
+
+}
+         //................3. new KEYWORD FOR CALLING CONSTRUCTOR FUNCTION
+alert(new Change().name);
+alert(name);
+function Calc()
+{
+        //..................4..USAGE OF this KEYWORD FOR ANOTHER CONSTRUCTOR -- CALC PERFORMING SUMMATION
+
+  this.sum= function(){
+    this.num1=2;
+    this.num2=3;
+  return this.num1+this.num2;
+  };
+}
+let calc= new Calc();
+alert(calc.sum()); 
+</script>
