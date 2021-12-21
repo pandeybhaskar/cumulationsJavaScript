@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+let user,room,num;
+       //.........1.Intro to JSON 
+function JsonStr()
+{
+   room={
+   num:75
+  };
+  user={
+  name: "Bhaskar",
+  age: 23,
+  coder: true,
+  city : null,
+  role: ["coder","tester","hr",{gender:"male"}]
+  };
+  //room.occupiedBy=user;
+                //.........2. Using STRINGIFY, VALUE, REPLACER, SPACE
+  let json= JSON.stringify(user, null,5 ); 
+  alert(typeof json);
+  alert(json); 
+  return (key==`occupiedBy`)?undefined:value;
+}
+JsonStr();
+</script>
