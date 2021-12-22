@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script >
+            //........1. HTML, HEAD , PARENT NODES
+    alert("HTML-"+ document.documentElement+" HEAD-"+document.head+ " no BODY-"+ document.body);
+    </script>
+  </head>
+
+  <body>
+    <script>
+      let elem= document.documentElement;
+     alert(" HEAD-"+document.head+ " BODY-"+ document.body);
+                                 //.....................2.REACHING ALL CHILD NODES
+     for(let i=0; i<document.body.childNodes.length;i++)
+     alert("child node : "+document.body.childNodes[i]);
+     
+     alert("child node length: "+ document.body.childNodes.length);
+                                //.................3.ACCESSING FIRST AND LAST CHILD NODE
+     alert("first child :"+ elem.firstChild+"last child :"+ elem.lastChild);
+     </script>
+  </body>
+</html>
