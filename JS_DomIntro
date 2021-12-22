@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+                //......1.CHANGING BACKROUND TO RED AND TIMEOUT AFTER 1 SECOND
+  document.body.style.background="red"   
+  setTimeout(()=> document.body.style.background="",1000);
+  
+                   //.......2.USING GLOBAL OBJECT WINDOW
+function sayHi() {
+  alert("Hello");
+  alert(window.innerHeight);
+}          
+                    //.....3.SITE INFO THEN CONFIRM TO SWITCH
+function site(){
+  alert(location.href);
+  if(confirm("want switch to JavaScript info ?"))
+  {
+  location.href = "https://javascript.info/";
+}
+}
+
+// global functions are methods of the global object:
+window.sayHi();
+window.site();
+</script>
