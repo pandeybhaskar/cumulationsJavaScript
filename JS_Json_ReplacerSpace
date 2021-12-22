@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+let space;
+   //...........1. OBJECT ROOM
+let room={
+  num:55
+};
+   //...........2. OBJECT HOTEL HAVING ALL TYPES OF DATA
+
+let hotel={
+name:"Taj",
+loc:"Mumbai",
+star: 5,
+avlbl: true,
+ngtv: null,
+cntry:[{c1:"USA"},{room},45554,"AllTypes"]
+};
+
+         //...........3. CIRCULAR REFRENCES
+
+room.occupied= hotel;
+                   //........................................4. USING REPLACER FUNCTION AND SPACE
+alert(JSON.stringify(hotel, function replacer(key, value){
+  alert(`${key} : ${value}`);
+  return (key=="occupied")?undefined:value;
+},space=1
+));
+
+</script>
