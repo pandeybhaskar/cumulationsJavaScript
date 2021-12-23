@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <h1>BULB ON/OFF</h1>
+  <p id="para">
+    <h3>Press buttons to see the change</h3>
+    <body>
+
+
+      <img id="blbOn" src="https://cdn.pixabay.com/photo/2013/07/12/14/34/light-148483_1280.png" style="display:none;">
+
+      <img id="blbOff" src="https://www.clipartmax.com/png/middle/34-340495_light-bulb-off-clipart.png" style="display:none;">
+
+      <script>
+        let bulbOnVar;
+        function on(){
+          bulbOnVar= document.getElementById("blbOn");
+          bulbOnVar.style.height='100px'
+          bulbOnVar.style.width='100px'
+          bulbOnVar.style.display="block"
+          document.getElementById("bon").value = "Blulb off"
+          bon.onclick.off();
+          if(bulbOnVar.value=="Blulb off")
+          {
+            bon.onclick.off();
+          off();
+          }
+          
+        
+        }
+        function off(){
+          document.getElementById("blbOff").style.height='100px'
+          document.getElementById("blbOff").style.width='100px'
+       document.getElementById("blbOff").style.display="block"
+        }
+       </script>
+      
+       <input  id="bon" type="button" onclick="on()" value= "Bulb On">
+       <input  id= "boff" type="button" onclick="off()" value= "Bulb Off">
+       
+     </body>
+  </p>
+</head>
