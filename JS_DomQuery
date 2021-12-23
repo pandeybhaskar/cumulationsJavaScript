@@ -1,0 +1,28 @@
+<!doctype html>
+<head>
+  <h1>THE TAJ H1 </h1>
+  <p>
+   <h3> This is RESTAURANT H3</h3>
+<body>
+<div id="divId">
+  <div>This is Division is Yellow</div>
+</div>
+<ul>
+  <li>
+    <input type="radio" name="bev" value="hot">
+   Beverages</li>
+  <li> 
+    <input type="radio" name="lnch" value="warm">
+    Lunch</li>
+
+<script>
+            //.....1. divId is a reference to DOM-element with id="divId"
+  divId.style.background= 'yellow';
+  
+  alert(document.getElementById("divId"));
+  alert(document.getElementsByTagName("input")[0]);   
+   
+</script>
+</body>
+  </p>
+</head>
