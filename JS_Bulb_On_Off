@@ -2,41 +2,63 @@
 <head>
   <h1>BULB ON/OFF</h1>
   <p id="para">
-    <h3>Press buttons to see the change</h3>
+    <h3>Press button to see the change </h3>
+    <style>
+             //...........CLASS
+      .button_onoff{
+          background-color: green;
+          color: white
+      }            
+                    //...........1.MOUSE HOVER
+      .button_onoff:hover{
+        background-color: white;
+        color: red
+      }
+      </style>
     <body>
-
+                   //..............2.IMAGE DISPLAY
 
       <img id="blbOn" src="https://cdn.pixabay.com/photo/2013/07/12/14/34/light-148483_1280.png" style="display:none;">
 
-      <img id="blbOff" src="https://www.clipartmax.com/png/middle/34-340495_light-bulb-off-clipart.png" style="display:none;">
+      <img id="blbOff" src="https://www.clipartmax.com/png/middle/34-340495_light-bulb-off-clipart.png" height='100px' width='100px'>
 
       <script>
-        let bulbOnVar;
-        function on(){
-          bulbOnVar= document.getElementById("blbOn");
+        let count=0;
+                                      //....................3. QUERY
+        bulbOnVar= document.getElementById("blbOn");
+        bulbOffVar= document.getElementById("blbOff");
+        document.body.style.background='pink'
+      
+                               //...............4.BULB ON OFF FUNCTION
+        function oNoff(){
+           if(count==0){
+           //  alert(count)
+          bulbOffVar.style.display='none'
           bulbOnVar.style.height='100px'
           bulbOnVar.style.width='100px'
           bulbOnVar.style.display="block"
-          document.getElementById("bon").value = "Blulb off"
-          bon.onclick.off();
-          if(bulbOnVar.value=="Blulb off")
-          {
-            bon.onclick.off();
-          off();
+          document.getElementById("bonoff").value= "Bulb Off"
+          document.getElementById("bonoff").style.background='orange' 
+          count=1;
+         // alert(count)
           }
-          
-        
+          else if(count==1){ 
+          //  alert(count)
+          bulbOnVar.style.display="none"
+          bulbOffVar.style.height='100px'
+          bulbOffVar.style.width='100px'
+          bulbOffVar.style.display="block"
+          document.getElementById("bonoff").value= "Bulb On"
+          document.getElementById("bonoff").style.background='maroon'
+          count=0; 
+         // alert(count)
+          }
         }
-        function off(){
-          document.getElementById("blbOff").style.height='100px'
-          document.getElementById("blbOff").style.width='100px'
-       document.getElementById("blbOff").style.display="block"
-        }
-       </script>
-      
-       <input  id="bon" type="button" onclick="on()" value= "Bulb On">
-       <input  id= "boff" type="button" onclick="off()" value= "Bulb Off">
        
+       </script> 
+                       //....................5.INPUTS
+                       
+       <input class="button_onoff"  id="bonoff" type="button" onclick="oNoff()" value= "Bulb On">
      </body>
   </p>
 </head>
