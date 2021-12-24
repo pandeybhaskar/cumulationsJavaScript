@@ -1,0 +1,29 @@
+<!doctype html>
+<body id="body" onclick="alert('BODY')">
+<style onclick="alert('STYLE')">
+  body  {
+    margin: 10px;
+    border: 1px solid blue;
+  }
+</style>
+            //...........................1. BUBBLING
+<form  onclick="alert('FORM')"> forming
+  <div onclick="alert('DIV')"> division
+    <p onclick="alert('P')" >para </p>
+  </div>
+</form>
+
+         
+         //...................2. EVENT.TARGET.TAGNAME AND THIS.TAGNAME ELEMENTS HIGHLIGHT
+<script>
+  body.onclick = function(event){
+  event.target.style.backgroundColor = 'yellow';
+
+  setTimeout(()=> {
+   alert("target ="+ event.target.tagName+", this ="+this.tagName)
+  },1000);
+
+  }
+  
+  </script>
+</body>
