@@ -1,0 +1,23 @@
+<!doctype html>
+<body>
+<style>
+  body * {
+    margin: 10px;
+    border: 1px solid blue;
+  }
+       //............1. TAGS
+</style>
+<form> forming
+  <div> division
+    <p>para </p>
+  </div>
+</form>
+        //................2. QUERY TO CAPTURE AND BUBBLE
+<script>
+  for(let elm of document.querySelectorAll('*')){
+  
+      elm.addEventListener("click", e => alert(`Capturing: ${elm.tagName}`), true);
+ elm.addEventListener("click", e => alert(`Bubbling: ${elm.tagName}`));
+  }
+  </script>
+</body>
