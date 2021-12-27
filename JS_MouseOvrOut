@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Alert</h2>
+          //..........1. Image and over-out events 
+
+<img onmouseover="over()" onmouseout="out()"
+ id= "blb" src="https://cdn.pixabay.com/photo/2013/07/12/14/34/light-148483_1280.png">
+<button id="press" onclick="myfunc()">Try it</button>
+<input type="radio" onclick="mybutt()"></input>
+
+<script src="hello.js">
+   /*
+   pressOb = document.getElementById("press");
+blbOb = document.getElementById("blb");
+pressOb.style.color="red";
+pressOb.style.backgroundColor="pink"
+
+blbOb.style.height='300px';
+blbOb.style.width='400px';
+
+  //..............2. when mouse is over the bulb image, expands
+function over()
+{
+   // alert("bulb is on..remove pointer from it! ");
+    blbOb.style.height= "500px";
+    blbOb.style.width= "600px";
+    setTimeout(out,5000);
+}
+     //........3. when mouse is out of bulb image, back to original
+function out(){
+    blbOb.style.height='300px';
+blbOb.style.width='400px';
+}
+   */
+
+</script>
+
+</body>
+</html>
