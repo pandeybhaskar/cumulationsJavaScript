@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <h1>CREATE PROFILE</h1>
+    <script src="profile.js"></script>
+    
+                           //........................1. FORM DESIGNING....EMAI, PASS, PINCODE VALIDATION THEREAFTER
+    const re =
+  /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+email= document.getElementById("email");
+pass= document.getElementById("pass");
+pin= document.getElementById("pin");
+button= document.getElementById("button");
+
+function validate(){
+    if(email.value== re)
+    {
+        alert("email right");
+    }
+    else
+    alert("email wrong")
+}
+
+    
+    <body>
+                               
+        <form>
+        <input id="email" placeholder="EMAIL ID">
+        <input id="pass" placeholder="PASS">
+        <input id="pin" placeholder="PINCODE">
+        <input type="button" id="submit" name="submit" value="Submit" onClick="validate()">
+    </form>
+
+    </body>
+</script>
+</head>
