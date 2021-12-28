@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<body bgcolor="maroon">
+    <h1 width:"500px" style="margin-left: 8cm;">THIS IS AUDIO-VIDEO CODE</h1>
+    <p>  
+      <h2 style="color: darkorange;">Play Humnava Mere </h2>  
+                                               //...............1.AUDIO PLAY SECTION 
+      
+      <audio controls muted id="aud" src="humnava.mp3" type="audio/mpeg">
+     </audio>
+     <h2 style="color: darkorange;">Play Video- Swacch </h2>
+     <p>     
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+                                             //................2. VIDEO PLAY SECTION
+    <video autoplay controls width="320" height="240"
+      id="vid" src="Swachh Bharat Abhiyan.mp4"
+     type="video/mp4"> 
+    </video>
+</p>
+
+</p>
+
+</body>
