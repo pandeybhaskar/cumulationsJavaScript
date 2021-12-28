@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<body id="demo">
+    <h1>Create Profile</h1>
+    <input id="email" placeholder="Email id" value="" type="text">
+    <input id="pass"  placeholder="Password" type="password">
+    <input id="rd" type="radio" 
+    <p>Accept all T&C </p>
+    
+    <input id="sub" type="button" value="Submit" onclick="valid()">
+    <script src="profile.js">
+    
+    email= document.getElementById("email");
+pass= document.getElementById("pass");
+sub= document.getElementById("submit");
+function valid(){
+    alert("Inside valid") 
+               //............1.EXTRACT MAIL AND PASSWORD VALUES
+
+    pass= document.getElementById("pass").value;
+    email=document.getElementById("email").value;
+    rd= document.getElementById("rd");
+ 
+                     //........2.REGEX FOR MAIL AND PASSWORD
+
+          if(rd.checked){           
+    if(email.includes("@") && pass.length>3 && pass.includes(4))
+    {
+        if(confirm("Confirm email: "+email)){
+        alert("Correct mail and password");
+    }
+    else return false
+}
+    else
+    alert("Wrong mail or password");
+} 
+else return false;
+}
+    
+    </script>
+</body>
