@@ -1,0 +1,41 @@
+body{
+    color:hotpink;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+    align-content: center;
+    background-image: url("https://media.istockphoto.com/photos/mountain-landscape-picture-id517188688");
+}
+h1{
+  /*  background:rgb(0,100,0); */
+    background: rgba(80, 50, 40, 1);
+    color: yellow;  
+}
+#para{
+    color:rgb(175, 50, 5);
+    font-size: large;
+    text-align: center;
+  /*  border: dotted; */
+  border:groove;
+  border-radius: 10px;
+  border-width: 20px 30px 50px;
+
+}
+#para1{
+    background-color:rgb(137, 189, 41); 
+    color:crimson;
+}
+.getClass{
+    background-color: orange;
+    color:red;
+    font-size: larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration:underline; 
+    position: relative;
+    left:50px;
+    border-radius: 10px;    
+}
+.getClass:hover{
+    background-color: darksalmon;
+}
