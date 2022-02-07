@@ -60,7 +60,7 @@ flex-shrink: 0;
     padding-top: 0.5rem;
     flex-shrink: 100;
 }
- .rc10{
+ .belowHeadBar{
     display: flex;
     height: 50rem;
     margin-top: 1rem;
@@ -86,12 +86,12 @@ flex-shrink: 0;
         font-size: 1rem;
     }
 }
-.rowInRc10{
+.rowNameVidMrk{
     width: 90rem;
     display: flex;
     flex-direction: column;    
 }
-.row0InRc10{
+.nameContainer{
     /* flex: 2; */
     /* margin-left: 2rem; */
     background-color: cornsilk;
@@ -141,15 +141,15 @@ flex-shrink: 0;
     text-align: center;
     border: ridge;
     border-radius: 1rem;
-    flex-shrink: 10;
-
+    flex-grow: 1;
 }
  .upldBut{
     background-color: yellow;
 } 
-.row1InRc10{
+.videoContainer{
     /* flex: 5; */
     margin-left: 2rem;
+    height: 22rem;
     background-color: cornsilk;
     border: ridge;
     border-radius: 1rem;
@@ -167,7 +167,7 @@ flex-shrink: 0;
     /* float: right; */
 }
 
-.row2InRc10{
+.mrkrContainer{
     /* flex:3; */
     margin-left: 2rem;
     background-color: cornsilk;
