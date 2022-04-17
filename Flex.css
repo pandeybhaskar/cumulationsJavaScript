@@ -1,0 +1,41 @@
+body{
+    background-color: aqua;
+}
+.box_Container{
+    display: flex;
+    background-color: pink;
+    width: 100%;
+    justify-content: center;
+
+}
+.boxFlx, #anyId{
+    border: dashed;
+    padding: 1%;
+    margin: 3%;
+    width: 200px;
+    height: 65px;
+    overflow: scroll;
+    word-spacing: 50px;
+
+}
+a:visited{
+    color: rgb(162, 187, 21);
+}
+a:hover{
+    color: rgb(172, 25, 25);
+}
+a:active{
+    color: rgb(8, 186, 240);
+}
+p.elm::first-letter{
+    color: rgb(177, 42, 177);
+    font-weight: bolder;
+}
+input:focus{
+    background-color: rgb(35, 240, 16);
+
+}
+#anyId{
+    background-color: rgb(35, 240, 16);
+    border-color: red;
+}
