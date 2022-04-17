@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<title>Form Page</title>
+<head>
+    <h1 Forms></h1>
+    <link rel="stylesheet" href="Forms.css">
+    <body>
+        <script src="Forms.js"></script>
+        <h4>USING FORMS</h4>
+        <!-- <div class="form-Container" id="formId">
+            <form>
+                <label>First Name</label>
+                <input id="fname" type="text" style="margin-left: 20px;" placeholder="First Name">
+                <br>
+                <label>Last Name</label>
+                <input id="lname" type="text" style="margin-left: 23px;" placeholder="Last Name">
+                <br>
+                <label>Email Id</label>
+                <input id="email" type="text" style="margin-left: 39px;" placeholder="Email Id">
+                <br>
+                <label>Gender</label>
+                <select style="margin-left: 49px;" >
+                     <option>Male</option>
+                     <option selected>Female</option>
+                     <option>Trans</option>
+                </select>
+                <br>
+                <label>Date of Birth</label>
+                <input id="dob" type="date" style="margin-left: 6px;"  >
+                <br>
+                <p><input type="checkbox">All information is true to my knowledge.</p>
+                <br>
+                <input id="submit" type="button" value="Submit">
+            </form>
+        </div> -->
+
+        <h4>USING GRIDS</h4>
+        <div class="form-grid-Container" id="formGridId">
+            <div class="col1">First Name</div>
+            <div class="col2">
+                <input id="fname" type="text"  placeholder="First Name">
+            </div>
+            <div class="col1">Last Name</div>
+            <div class="col2">
+                <input id="lname" type="text"  placeholder="Last Name">
+            </div>
+            <div class="col1">Email Id</div>
+            <div class="col2">
+                <input id="email" type="text"  placeholder="Email Id">
+            </div>  
+            <div class="col1">Gender</div>
+            <div class="col2">
+                <select id="gender" >
+                    <option value="Male">Male</option>
+                    <option value="Female" selected>Female</option>
+                    <option value="Trans">Trans</option>
+               </select>
+            </div>
+            <div class="col1">Date of Birth</div>   
+            <div class="col2" id="dob">
+                <input id="dob" type="date">
+            </div>
+            <p style="align-self: right;" lang="fr"><input type="checkbox" id="check">All information is true to my knowledge.</p>
+        <br>
+        <input id="submit" type="button" value="Submit" onclick="submitPress()">
+        </div>
+        
+    </body>
+</head>
