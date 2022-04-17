@@ -1,0 +1,80 @@
+nav{
+    background-color: rgb(119, 166, 253);  
+    font-weight:bold;
+    width: 100%;
+}
+li{
+    display: inline;
+    /* list-style-type: none; */
+    float:right;
+    margin-top: -17px;
+    margin-right: 1rem;
+    text-shadow: 5px 5px 5px red;
+    background-color: yellow;
+}
+
+img{
+    position: absolute;
+    z-index: -1;    
+    -webkit-box-reflect:right;
+    /* justify-content: center; */
+}
+.boxFlex{
+    display: flex; 
+    flex-direction: row;
+    opacity: 0.7;
+    width: 75%;
+    justify-content: left;
+}
+.boxFlex > .box1{   
+    height: 1%;
+    /* z-index: 1; */
+    margin: 5%;
+    padding: 5%;
+    border: ridge;
+    border-radius: 10%;
+    box-shadow: 15px 15px 15px yellowgreen;
+    background-color: coral;
+}
+.box1:hover{
+    box-shadow: 15px 15px 15px rgb(51, 140, 241);
+}
+
+.boxGrid{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10%;
+    column-gap: 1%;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    opacity: 0.7;
+    background-color: aquamarine;
+    justify-items: center;
+}
+.boxGrid>.box2{
+    height: 20%;
+    width: 30%;
+    margin: 5%;
+    padding: 5%;
+    text-align: center;
+    overflow:scroll;
+    text-overflow:ellipsis;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    border: ridge;
+    border-radius: 10%;
+    box-shadow: 15px 15px 15px yellowgreen;
+    background-color: coral;
+}
+.box2:hover{
+    box-shadow: 15px 15px 15px rgb(51, 140, 241);
+    transition: 1s;
+}
+.desc{
+    background-color: rgb(84, 240, 123) !important;
+}
+
+#desc{
+       background-color: yellow;
+} 
