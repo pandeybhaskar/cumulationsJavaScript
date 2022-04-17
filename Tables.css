@@ -1,0 +1,23 @@
+.people{
+    width: 100%;
+    border: solid;
+    padding: 3px;
+    border-color: red;
+    text-align: center;
+}
+th{
+    background-color:burlywood;
+    padding: 3px;
+    font-size: large;
+}
+tr:nth-child(even){
+    background-color: aqua;
+}
+tr:nth-child(odd){
+    background-color: plum;
+}
+/* @media screen and (max-width:40rem) {
+    th{
+        font-size: 10px;
+    }
+} */
